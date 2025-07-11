@@ -1,0 +1,8 @@
+BridgeRelay 1
+ORPort 443
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportListenAddr obfs4 0.0.0.0:3389
+ExtORPort auto
+ContactInfo {{ bridge_mail }}
+Nickname {{ bridge_name }}
+SocksPort 0
