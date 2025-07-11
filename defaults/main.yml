@@ -1,5 +1,10 @@
 ---
 # defaults file for obfs4-ansible
+obfs4_packages_utils_deb:
+- apt-transport-https
+- lsb-release
+- ufw  
+
 obfs4_packages_tor_deb:
 - tor
 - deb.torproject.org-keyring

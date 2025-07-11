@@ -9,6 +9,12 @@
     state: present
     update_cache: true
 
+- name: Install obfs4_packages_utils_deb
+  ansible.builtin.package:
+    name: "{{ obfs4_packages_utils_deb }}"
+    default_release: bookworm-backports
+    state: present
+
 - name: Ensure torproject gpg key is installed (A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89)
   ansible.builtin.apt_key:
     url: https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc
